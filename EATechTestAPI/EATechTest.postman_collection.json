@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "fdeef1c6-e8a0-4ece-b5b1-d87d61ac2538",
+		"name": "EATechTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21242736",
+		"_collection_link": "https://cloudy-resonance-790070.postman.co/workspace/s~4a2578a9-4aa8-4ee5-944c-8fcb2c1adc12/collection/21242736-fdeef1c6-e8a0-4ece-b5b1-d87d61ac2538?action=share&source=collection_link&creator=21242736"
+	},
+	"item": [
+		{
+			"name": "CalculateCustomerNodeNetwork",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"network\": {\r\n        \"branches\": [\r\n            {\r\n                \"startNode\": 10,\r\n                \"endNode\": 20\r\n            },\r\n            {\r\n                \"startNode\": 20,\r\n                \"endNode\": 30\r\n            },\r\n            {\r\n                \"startNode\": 30,\r\n                \"endNode\": 50\r\n            },\r\n            {\r\n                \"startNode\": 50,\r\n                \"endNode\": 60\r\n            },\r\n            {\r\n                \"startNode\": 50,\r\n                \"endNode\": 90\r\n            },\r\n            {\r\n                \"startNode\": 60,\r\n                \"endNode\": 40\r\n            },\r\n            {\r\n                \"startNode\": 70,\r\n                \"endNode\": 80\r\n            }\r\n        ],\r\n        \"customers\": [\r\n            {\r\n                \"node\": 30,\r\n                \"numberOfCustomers\": 8\r\n            },\r\n            {\r\n                \"node\": 40,\r\n                \"numberOfCustomers\": 3\r\n            },\r\n            {\r\n                \"node\": 60,\r\n                \"numberOfCustomers\": 2\r\n            },\r\n            {\r\n                \"node\": 70,\r\n                \"numberOfCustomers\": 1\r\n            },\r\n            {\r\n                \"node\": 80,\r\n                \"numberOfCustomers\": 3\r\n            },\r\n            {\r\n                \"node\": 90,\r\n                \"numberOfCustomers\": 5\r\n            }\r\n        ]\r\n    },\r\n    \"selectedNode\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7046/CustomerNodeNetwork",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7046",
+					"path": [
+						"CustomerNodeNetwork"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
